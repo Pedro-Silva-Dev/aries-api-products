@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  db:
+    container_name: aries_mysql_products
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    tty: true
+    environment:
+      MYSQL_DATABASE: aries
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: aries
+      MYSQL_USER: aries
+    ports:
+      - 3310:3306
+    expose:
+      - 3310
+    volumes:
+      - ./db:/var/lib/mysql
+
+

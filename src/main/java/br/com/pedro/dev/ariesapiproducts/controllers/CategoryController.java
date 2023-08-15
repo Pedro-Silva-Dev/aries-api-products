@@ -106,7 +106,7 @@ public class CategoryController {
         Category category = categoryService.updateCategory(id, categoryRequest);
         if(category != null) {
             CategoryResponse categoryResponse = CategoryMapper.INSTANCE.toCategoryResponse(category);
-            return ResponseEntity.status(HttpStatus.OK.value()).body(categoryResponse);
+            return ResponseEntity.status(HttpStatus.ACCEPTED.value()).body(categoryResponse);
         }
         throw new NotFoundRequestException("Category not found for update.");
     }

@@ -8,8 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 
 @Builder(setterPrefix = "set")
-public record CategoryUpdateRequest(
-    @NotNull Long id,
+public record CategoryRequest(
     @NotNull @NotEmpty @NotBlank @Length(max = 300) String name,
     @NotNull Boolean active
 ) {

@@ -1,1 +1,7 @@
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/models/responses/CategoryResponse.java
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/models/Category.java
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/repositories/CategoryRepository.java
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/services/CategoryService.java
 /home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/AriesApiProductsApplication.java
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/models/requests/CategoryRequest.java
+/home/pedro/Sekunds/aries-api-products/src/main/java/br/com/pedro/dev/ariesapiproducts/models/mappers/CategoryMapper.java

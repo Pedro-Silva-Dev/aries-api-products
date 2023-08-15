@@ -12,5 +12,5 @@ public abstract class CategoryMapper {
     public static final CategoryMapper INSTANCE = Mappers.getMapper(CategoryMapper.class);
 
     public abstract Category toCategory(CategoryRequest categoryCreateRequest);
-    public abstract CategoryResponse toAddressResponse(Category category);
+    public abstract CategoryResponse toCategoryResponse(Category category);
 }

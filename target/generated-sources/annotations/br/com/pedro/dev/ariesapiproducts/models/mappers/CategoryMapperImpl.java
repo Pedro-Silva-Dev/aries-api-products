@@ -7,8 +7,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-08-15T12:43:54-0300",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.8 (Private Build)"
+    date = "2023-08-15T16:25:58-0300",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.35.0.v20230721-1147, environment: Java 17.0.7 (Eclipse Adoptium)"
 )
 public class CategoryMapperImpl extends CategoryMapper {
 
@@ -20,23 +20,23 @@ public class CategoryMapperImpl extends CategoryMapper {
 
         Category.CategoryBuilder category = Category.builder();
 
-        category.setName( categoryCreateRequest.name() );
         category.setActive( categoryCreateRequest.active() );
+        category.setName( categoryCreateRequest.name() );
 
         return category.build();
     }
 
     @Override
-    public CategoryResponse toAddressResponse(Category category) {
+    public CategoryResponse toCategoryResponse(Category category) {
         if ( category == null ) {
             return null;
         }
 
         CategoryResponse.CategoryResponseBuilder categoryResponse = CategoryResponse.builder();
 
+        categoryResponse.setActive( category.getActive() );
         categoryResponse.setId( category.getId() );
         categoryResponse.setName( category.getName() );
-        categoryResponse.setActive( category.getActive() );
 
         return categoryResponse.build();
     }

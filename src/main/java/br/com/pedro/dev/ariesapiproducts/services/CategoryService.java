@@ -35,7 +35,8 @@ public class CategoryService {
         BooleanBuilder builder = new BooleanBuilder();
 
         if(name != null) {
-            builder.and(qCategory.name.toLowerCase().like(("%"+name+"%").toLowerCase()));
+            String paramName = ("%"+name+"%").toLowerCase();
+            builder.and(qCategory.name.toLowerCase().like(paramName));
         }
         if(active != null) {
             builder.and(qCategory.active.eq(active));
@@ -54,7 +55,8 @@ public class CategoryService {
         BooleanBuilder builder = new BooleanBuilder();
 
         if(name != null) {
-            builder.and(qCategory.name.toLowerCase().like(("%"+name+"%").toLowerCase()));
+            String paramName = ("%"+name+"%").toLowerCase();
+            builder.and(qCategory.name.toLowerCase().like(paramName));
         }
         if(active != null) {
             builder.and(qCategory.active.eq(active));

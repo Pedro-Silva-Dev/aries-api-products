@@ -53,7 +53,7 @@ public class CategoryRepositoryTest {
         registry.add("spring.datasource.username", mySQLContainer::getUsername);
     }
 
-    @DisplayName("Remover todos as categorias depois de cada teste.")
+    @DisplayName("Remover todas as categorias depois de cada teste.")
     @AfterEach
     void removeAfterEach() {
         categoryRepository.deleteAll();

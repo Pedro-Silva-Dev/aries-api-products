@@ -56,6 +56,6 @@ public class Product {
     private LocalDateTime dhu;
 
     @Column(name = "categoria_id")
-    private Integer categoryId;
+    private Long categoryId;
     
 }

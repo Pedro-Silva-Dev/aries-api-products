@@ -34,20 +34,20 @@ public class ProductService {
         QProduct qProduct = QProduct.product;
         BooleanBuilder builder = new BooleanBuilder();
 
-        if(productParams.name() != null) {
+         if(productParams != null && productParams.name() != null) {
             String paramName = ("%"+productParams.name()+"%").toLowerCase();
             builder.and(qProduct.name.toLowerCase().like(paramName));
         }
-        if(productParams.minPrice() != null && productParams.maxPrice() != null) {
+        if(productParams != null && productParams.minPrice() != null && productParams.maxPrice() != null) {
             builder.and(qProduct.price.between(productParams.minPrice(), productParams.maxPrice()));
         }
-        if(productParams.stock() != null) {
+        if(productParams != null && productParams.stock() != null) {
             builder.and(qProduct.stock.loe(productParams.stock()));
         }
-        if(productParams.active() != null) {
+        if(productParams != null && productParams.active() != null) {
             builder.and(qProduct.active.eq(productParams.active()));
         }
-        if(productParams.categoryId() != null) {
+        if(productParams != null && productParams.categoryId() != null) {
             builder.and(qProduct.categoryId.eq(productParams.categoryId()));
         }
         return productRepository.findAll(builder, pageable);
@@ -62,20 +62,20 @@ public class ProductService {
         QProduct qProduct = QProduct.product;
         BooleanBuilder builder = new BooleanBuilder();
 
-        if(productParams.name() != null) {
+        if(productParams != null && productParams.name() != null) {
             String paramName = ("%"+productParams.name()+"%").toLowerCase();
             builder.and(qProduct.name.toLowerCase().like(paramName));
         }
-        if(productParams.minPrice() != null && productParams.maxPrice() != null) {
+        if(productParams != null && productParams.minPrice() != null && productParams.maxPrice() != null) {
             builder.and(qProduct.price.between(productParams.minPrice(), productParams.maxPrice()));
         }
-        if(productParams.stock() != null) {
+        if(productParams != null && productParams.stock() != null) {
             builder.and(qProduct.stock.loe(productParams.stock()));
         }
-        if(productParams.active() != null) {
+        if(productParams != null && productParams.active() != null) {
             builder.and(qProduct.active.eq(productParams.active()));
         }
-        if(productParams.categoryId() != null) {
+        if(productParams != null && productParams.categoryId() != null) {
             builder.and(qProduct.categoryId.eq(productParams.categoryId()));
         }
         return (List<Product>) productRepository.findAll(builder);

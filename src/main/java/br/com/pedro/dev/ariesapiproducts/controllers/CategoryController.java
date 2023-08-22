@@ -92,7 +92,7 @@ public class CategoryController {
             CategoryResponse categoryResponse = CategoryMapper.INSTANCE.toCategoryResponse(category);
             return ResponseEntity.status(HttpStatus.CREATED.value()).body(categoryResponse);
         }
-        throw new NotAcceptableRequestException("Category cannot have an ID to register.");
+        throw new NotAcceptableRequestException("Category cannot have an id to register.");
     }
 
     /**

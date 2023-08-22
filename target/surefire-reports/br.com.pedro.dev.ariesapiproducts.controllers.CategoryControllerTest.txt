@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.pedro.dev.ariesapiproducts.controllers.CategoryControllerTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.257 s - in br.com.pedro.dev.ariesapiproducts.controllers.CategoryControllerTest

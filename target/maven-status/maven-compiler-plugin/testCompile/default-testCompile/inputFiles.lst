@@ -1,3 +1,9 @@
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/services/ProductServiceTest.java
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/controllers/CategoryControllerTest.java
 /home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/repositories/CategoryRepositoryTest.java
 /home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/utils/CategoryCreateTest.java
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/utils/PageableResponse.java
 /home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/ApiProductsApplicationTests.java
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/utils/ProductCreateTest.java
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/services/CategoryServiceTest.java
+/home/pedro/Sekunds/aries-api-products/src/test/java/br/com/pedro/dev/ariesapiproducts/repositories/ProductRepositoryTest.java

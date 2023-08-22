@@ -97,10 +97,10 @@ public class ProductController {
      */
     @PutMapping("/{id}.json")
     public ResponseEntity<ProductResponse> updateProduct(@PathVariable Long id, @RequestBody @Valid ProductRequest productRequest) {
-        Product product = productService.createProduct(productRequest);
+        Product product = productService.updateProduct(id, productRequest);
         if(product != null) {
             ProductResponse productResponse = ProductMapper.INSTANCE.toProductResponse(product);
-            return ResponseEntity.status(HttpStatus.CREATED.value()).body(productResponse);
+            return ResponseEntity.status(HttpStatus.ACCEPTED.value()).body(productResponse);
         }
         throw new NotFoundRequestException("Product not found for update.");
     }

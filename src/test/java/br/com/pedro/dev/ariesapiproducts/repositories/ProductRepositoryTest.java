@@ -70,7 +70,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma pagina de todos os produtos")
-    void getPageCategoryTest() {
+    void getPageProductTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -97,7 +97,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma pagina de todos os produtos filtrando por nome")
-    void getPageCategoryFilterByNameTest() {
+    void getPageProductFilterByNameTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -128,7 +128,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma pagina de todos os produtos filtrando por atributos")
-    void getPageCategoryFilterByNameAndStatusTest() {
+    void getPageProductFilterByNameAndStatusTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -163,7 +163,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma lista de todos os produtos")
-    void getListCategoryTest() {
+    void getListProductTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -187,7 +187,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma lista de todos os produtos filtrando por nome")
-    void getListCategoryFilterByNameTest() {
+    void getListProductFilterByNameTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -215,7 +215,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter uma lista de todos os produtos filtrando por atributos")
-    void getListCategoryFilterByNameAndStatusTest() {
+    void getListProductFilterByNameAndStatusTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -247,7 +247,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter um produto por id")
-    void getCategoryByIdTest() {
+    void getProductByIdTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);
 
@@ -271,7 +271,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Obter um produto por id invalido")
-    void getCategoryByIdInvalidTest() {
+    void getProductByIdInvalidTest() {
         Optional<Product> result = productRepository.findById(0L);
 
         assertThat(result).isNotNull();
@@ -280,7 +280,7 @@ public class ProductRepositoryTest {
 
     @Test
     @DisplayName("Atualizar um produto por id")
-    void updateCategoryByIdTest() {
+    void updateProductByIdTest() {
         Category category = CategoryCreateTest.getCreateCategory();
         Category category2 = CategoryCreateTest.getCreateCategory();
         Category categorySaved = categoryRepository.save(category);

@@ -25,13 +25,9 @@ import org.testcontainers.utility.DockerImageName;
 
 import com.querydsl.core.BooleanBuilder;
 
-import br.com.pedro.dev.ariesapiproducts.models.Category;
-import br.com.pedro.dev.ariesapiproducts.models.Product;
 import br.com.pedro.dev.ariesapiproducts.models.Promotion;
-import br.com.pedro.dev.ariesapiproducts.models.QProduct;
 import br.com.pedro.dev.ariesapiproducts.models.QPromotion;
 import br.com.pedro.dev.ariesapiproducts.utils.PromotionCreateTest;
-import br.com.pedro.dev.ariesapiproducts.utils.ProductCreateTest;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2

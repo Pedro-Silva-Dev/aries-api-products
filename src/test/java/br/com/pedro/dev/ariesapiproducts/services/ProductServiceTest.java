@@ -23,13 +23,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.querydsl.core.BooleanBuilder;
 
-import br.com.pedro.dev.ariesapiproducts.models.Category;
 import br.com.pedro.dev.ariesapiproducts.models.Product;
-import br.com.pedro.dev.ariesapiproducts.models.requests.CategoryRequest;
 import br.com.pedro.dev.ariesapiproducts.models.requests.ProductRequest;
-import br.com.pedro.dev.ariesapiproducts.repositories.CategoryRepository;
 import br.com.pedro.dev.ariesapiproducts.repositories.ProductRepository;
-import br.com.pedro.dev.ariesapiproducts.utils.CategoryCreateTest;
 import br.com.pedro.dev.ariesapiproducts.utils.ProductCreateTest;
 
 @DisplayName("Testar o service de Produto.")
@@ -117,7 +113,6 @@ public class ProductServiceTest {
 
         Product result = productService.createProduct(productRequest);
 
-        assertThat(result).isNotNull();
         assertThat(result).isNotNull();
         assertThat(result.getId()).isPositive();
         assertThat(result.getName()).isNotNull();

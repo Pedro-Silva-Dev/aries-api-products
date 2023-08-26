@@ -23,5 +23,8 @@
 hs_err_pid*
 replay_pid*
 
-.vscode/
+# vs-code
+.vscode
+
+# banco de dados
 db/
